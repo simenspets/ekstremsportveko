@@ -12,8 +12,8 @@ inputPlaceholder = "Message...";
 widgetDescription = "Jeg er ganske smart, men trenger et par sekunder til å tenke meg om💡 Jeg er fortsatt under opplæring, og kan derfor gjøre små feil.";
 inputPlaceholder = "Skriv melding...";
 } else {
-widgetDescription = "Jeg er ganske smart, men trenger et par sekunder til å tenke meg om💡 Jeg er fortsatt under opplæring, og kan derfor gjøre små feil.";
-inputPlaceholder = "Skriv melding...";
+widgetDescription = "I'm pretty smart, but I need a couple of seconds to think💡 I'm still learning, so I might make small mistakes.";
+inputPlaceholder = "Message...";
 }
 
 
@@ -147,7 +147,7 @@ const FormExtension = {
     var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
     v.onload = function() {
       window.voiceflow.chat.load({
-        verify: { projectID: '678e2b0cc281e62ca5f3d6da' },
+        verify: { projectID: '6744787daeb8c57bb478459c' },
         url: 'https://general-runtime.voiceflow.com',
         versionID: 'production',
         assistant: {
