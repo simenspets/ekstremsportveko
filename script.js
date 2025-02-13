@@ -1,6 +1,7 @@
 // Dette er Dalai Solutions AS sin eiendom, på leie til Ekstremsportveko. Bruk utover avtale er ikke tillat.    
 let inputPlaceholder = " ";
 let widgetDescription = " ";
+let widgetStylesheet = "";
 let browserUrl = window.location.href;
 let browser_url = window.location.href;
 
@@ -8,12 +9,15 @@ let browser_url = window.location.href;
  if (browserUrl.includes('/en')) {
 widgetDescription = "I'm pretty smart, but I need a couple of seconds to think💡 I'm still learning, so I might make small mistakes.";
 inputPlaceholder = "Message...";
+widgetStylesheet = "https://kristoman-rikardo.github.io/buttonlabels/litentilveko.css";
 } else if (browserUrl.includes('/no')) {
 widgetDescription = "Jeg er ganske smart, men trenger et par sekunder til å tenke meg om💡 Jeg er fortsatt under opplæring, og kan derfor gjøre små feil.";
 inputPlaceholder = "Skriv melding...";
+widgetStylesheet = "https://kristoman-rikardo.github.io/buttonlabels/litentilveko.css";
 } else {
 widgetDescription = "I'm pretty smart, but I need a couple of seconds to think💡 I'm still learning, so I might make small mistakes.";
 inputPlaceholder = "Message...";
+widgetStylesheet = "https://kristoman-rikardo.github.io/buttonlabels/litentilveko.css";
 }
 
 
@@ -152,7 +156,7 @@ const FormExtension = {
         versionID: 'production',
         assistant: {
            extensions: [FormExtension],
-           stylesheet: "<style> .vfrc-header--title { color: 2B5AFF; } </style>",
+           stylesheet: widgetStylesheet,
            banner: {
              description: widgetDescription,
            },
